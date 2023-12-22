@@ -4,23 +4,131 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <script defer src="../scripts/darkmode.js"></script>
+    <script defer src="../scripts/validate.js"></script>
     <title>Контакты</title>
 </head>
-<body>
-    <form action="" method="">
-        <label for = "name">Ваше имя</label>
-        <br>
-        <input type="text" placeholder="Введите имя" name ="yourname" id="name">
-        <br>
-        <label for = "email">Ваше почта</label>   
-        <br>
-        <input type="text" placeholder="Введите email" name ="youremail" id="email">
-        <br>
-        <label for = "phone">Ваш телефон</label>
-        <br>
-        <input type="text" placeholder="Введите телефон" name ="yourphone" id="phone">
-        <br>
-        <textarea cols = "30" rows = "15">aboba</textarea>
-    </form>
+
+<body>        
+    <header>
+        <div class = "mainheader">
+            <button id="switch_mode"></button>
+            <nav>
+                <a class = "nav_link" href = "../main.html"> О себе</a>
+                <a class = "nav_link" href = "../main.html#what_i_can">Мои умения</a>
+                <a class = "nav_link" href = "summary.html"> Резюме</a>
+                <a class = "nav_link" href = "contacts.html"> Контакты</a>
+                <a class = "nav_link" href = "interest.html"> Мои интересы</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="section1">
+            <div class="container">
+                <div class="section_title">
+                    <h1>Как со мной связаться</h1>
+                </div>
+                <div class="section_main">
+                    <div class="items">
+                        <a class="contact" href="https://vk.com/cjlblwy_zov">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/VK_Compact_Logo_%282021-present%29.svg/640px-VK_Compact_Logo_%282021-present%29.svg.png" height="100%" alt="вк">
+                        </a>
+                        <a class="contact" href="https://t.me/@Yapycckuu">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Telegram_2019_Logo.svg/1200px-Telegram_2019_Logo.svg.png" height="100%" alt="тг">
+                        </a>
+                        <a class="contact" href="https://discordapp.com/users/432241103010267136">
+                            <img src="https://w7.pngwing.com/pngs/10/145/png-transparent-discord-logo-icon.png" height="100%" alt="дис">
+                        </a>                       
+                        <div class="contact" href="">
+                            <div class="card">
+                                <h3>Телефон</h3>
+                                <p>8-800-555-35-35</p>
+                            </div>
+                        </div>
+                        <div class="contact" href="">
+                            <div class="card">
+                                <h3>Почта</h3>
+                                <p>tavkh.22@uni-dubna.ru</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section2 ">
+            <div class="container">
+                <div class="section_title">
+                    <h1>Оставить отзыв</h1>
+                </div>
+                <div class="section_main">
+                    <form class="cont" method="get">
+                        <select name="" id="">
+                            <option selected disabled value="">Выберите пол</option>
+                            <option value="">Мужской</option>
+                            <option value="">Женский</option>
+                        </select>
+                        <input class="name" required placeholder="Ваше имя" type="text" value="">
+                        <textarea placeholder="Отзыв"></textarea>
+                        <label><input type="checkbox">Подписаться на обновления</label>
+                        <button class="send">Отправить</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <section class="section1">
+            <div class="container">
+                <div class="section_title">
+                    <h1>Введите свои данные</h1>
+                </div>
+                <div class="section_main">
+                    <form id="author">
+                        <div id="block_info">
+                            <h3>Информация</h3>
+                            <div id="info_inputs">
+                                <p class="text_name">Введите имя: <input type="text" id="textName"></p>
+                                <p class="text_email">Введите e-mail: <input type="email" id="email"></p>
+                                <p class="text_number">Введите телефон: <input type="number" id="number"></p>
+                                <p class="text_data">Введите дату: <input type="date" id="data"></p>
+                                <p class="text_url">Введите URL: <input type="url" id="url"></p>
+                            </div>
+                        </div>
+                        <div id="block_radio">
+                            <h3>Добавить способ ответа</h3>
+                            <div id="radios">
+                                <label><input type="radio" value="mes" name="1">Сообщение</label>
+                                <label><input type="radio" value="e-mail" name="1">e-mail</label>
+                                <label><input type="radio" value="number" name="1">Телефон</label>
+                                <label><input type="radio" value="data" name="1">Назначить встречу</label>
+                                <label><input type="radio" value="url" name="1">URL</label>
+                            </div>
+                        </div>
+                        <div id="block_textarea">
+                            <h3>Ваше сообщение</h3>
+                            <textarea name="" id="textarea" cols="30" rows="10"></textarea>
+                        </div>
+                        <div id="block_select">
+                            <h3>Укажите тему</h3>
+                            <select name="" id="select">
+                                <option selected="selected" value="without">Без темы</option>
+                                <option value="question">Вопрос</option>
+                            </select>
+                        </div>
+                        <div id="block_checkbox">
+                            <h3>Что за вопрос</h3>
+                            <div>
+                                <p><input type="checkbox"> Зачем</p>
+                                <p><input type="checkbox"> Когда</p>
+                                <p><input type="checkbox"> Для кого</p>
+                                <p><input type="checkbox"> Кто</p>
+                            </div>
+                        </div>
+                        <input name="button" type="submit" value="Отправить">
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>Developed by Артур</footer>
 </body>
 </html>
