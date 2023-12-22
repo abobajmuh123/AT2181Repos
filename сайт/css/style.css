@@ -1,6 +1,52 @@
+:root{
+    --main_color: rgb(30,30,30);
+    --second_color: rgb(15, 15, 15);
+    --text_color: white;
+}
 table
 {
     border-style: solid;
     border-width: 1px;
     border-color: black;
+}
+header{
+    width: 100%;
+    vertical-align: middle;
+    text-align: center;
+    height: 60px;
+    background-color: var(--second_color);
+}
+body{
+    background-color: var(--main_color);
+}
+a{
+    color: var(--text_color);
+}
+h1{
+    color: var(--text_color);
+}
+h2{
+    color: var(--text_color)
+}
+section{
+    color: var(--text_color);
+}
+.wrapper{
+    display: flex;
+}
+.block{
+    display: inline-block;
+    width: 40%;
+    height: 300px;
+    text-align: center;
+    vertical-align: top;
+    border: 10px;
+    margin: 20px;
+}
+.nav_link{
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 22px;
+    font-size: 22px;
+    position: relative;
 }
