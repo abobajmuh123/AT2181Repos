@@ -2,30 +2,36 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AOAOAOAO</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" href="resourses/logo.ico" type="image/x-icon">
 </head>
-<header>
-    <nav>
-        <a class = "nav_link" href = "main.html"> О себе</a>
-        <a class = "nav_link" href = "main.html#myself">Мои умения</a>
-        <a class = "nav_link" href = "pages/summary.html"> Резюме</a>
-        <a class = "nav_link" href = "pages/contacts.html"> Контакты</a>
-        <a class = "nav_link" href = "pages/interest.html"> Мои интересы</a>
-    </nav>
-</header>
 <body>
-    <div class = "wrapper">
-        <div class = "block"><img src="resourses/me.jpg"></div>
-        <section class = "block">
-            <h1 id = "myself">О себе</h1>
-            Тарасов Артур Владимирович
-            Я студент второго курса 
-                    *что-то о себе*
-        </section>
-    </div>
+    <header>
+        <div class = "mainheader">
+            <button id="switch_mode"></button>
+            <nav>
+                <a class = "nav_link" href = "main.html"> О себе</a>
+                <a class = "nav_link" href = "main.html#myself">Мои умения</a>
+                <a class = "nav_link" href = "pages/summary.html"> Резюме</a>
+                <a class = "nav_link" href = "pages/contacts.html"> Контакты</a>
+                <a class = "nav_link" href = "pages/interest.html"> Мои интересы</a>
+            </nav>
+        </div>
+    </header>
+    <body>
+        <div class = "wrapper">
+            <div class = "block"><img src="resourses/me.jpg" height="100%"></div>
+            <section class = "block">
+                <h1 id = "myself">О себе</h1>
+                <div>Я Тарасов Артур Владимирович. Студент 2 курса ГУ Дубна</div>
+            </section>
+        </div>
+        <div class="space"></div>
+        <section></section>
+        <footer>Developed by Артур</footer>
+    </body>
+    <script src="scripts/darkmode.js"></script>
 </body>
 </html>
