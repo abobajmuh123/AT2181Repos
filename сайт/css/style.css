@@ -129,7 +129,6 @@ header{
     width: 300px;
     margin: 5px auto;
     padding: 10px;
-    border: var(--second_color) dotted 7px;
     display: flex;
     overflow: hidden;
 }
@@ -143,15 +142,9 @@ header{
 .slider-prev, .slider-next{
     margin: 0 50px;
     padding: 5px 7px;
-    border: var(--second_color) dotted 4px;
-    transition: .1s linear;
     user-select: none;
 }
 
-.slider-prev:hover, .slider-next:hover{
-    background-color: var(--main_color);
-    color: var(--text_color_main);
-}
 .fix{
     width: 100%;
     height: 100%;
@@ -216,7 +209,6 @@ table
     width: 73%;
     padding: 10px;
     font-size: 16px;
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
 }
 
 .list{
@@ -229,22 +221,12 @@ table
     position: relative;
     padding: 12px 8px 12px 40px;
     background: #eee;
-    transition: 0.2s;
 
     user-select: none;
 }
 
-.list li:nth-child(odd) {
-    background: #f9f9f9;
-}
 
-.list li:last-child {
-    overflow: hidden;
-}
 
-.list li:hover {
-    background: #ddd;
-}
 
 
 .list li.done {
@@ -253,18 +235,6 @@ table
     text-decoration: line-through;
 }
 
-.list li.done::before {
-    content: '';
-    position: absolute;
-    border-color: #fff;
-    border-style: solid;
-    border-width: 0 2px 2px 0;
-    top: 10px;
-    left: 16px;
-    transform: rotate(45deg);
-    height: 15px;
-    width: 7px;
-}
 
 .list span {
     position: absolute;
@@ -272,11 +242,7 @@ table
     top: 0;
     padding: 12px 16px 12px 16px;
 }
-  
-.list span:hover {
-    background-color: #f44336;
-    color: white;
-}
+
 .timer{
     width: 60vw;
     margin: 0 auto;

@@ -9,7 +9,6 @@ const timeButtons = timer.querySelector(".time_buttons");
 const actionButtons = timer.querySelector(".time_action_buttons");
 
 let delayNames = [
-    ["10 Сек", 10],
     ["5 минут", 300],
     ["15 минут", 900],
     ["25 минут", 1500]
