@@ -4,9 +4,102 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="../scripts/darkmode.js"></script>
+    <script defer src="../scripts/gallery.js"></script>
+    <script defer src="../scripts/timer.js"></script>
+    <link rel="stylesheet" href="../css/style.css">
     <title>Document</title>
 </head>
 <body>
-    
+    <header>
+        <div class = "mainheader">
+            <button id="switch_mode"></button>
+            <nav>
+                <a class = "nav_link" href = "main.html"> О себе</a>
+                <a class = "nav_link" href = "main.html#what_i_can">Мои умения</a>
+                <a class = "nav_link" href = "pages/summary.html"> Резюме</a>
+                <a class = "nav_link" href = "pages/contacts.html"> Контакты</a>
+                <a class = "nav_link" href = "pages/interest.html"> Мои интересы</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="section2">
+            <div class="container">
+                <div class="section_title">
+                    <h1>Галерея</h1>
+                </div>
+                <div class="section_main">
+                    <div class="container_photo">
+                        <div class="slider">
+                            <div class="sliderln">
+                                <div class="image">
+                                    <img src="../resourses/1.jpg" alt="" class="fix">
+                                </div>
+                                <div class="image">
+                                    <img src="../resourses/2.jpg" alt="" class="fix">
+                                </div>
+                                <div class="image">
+                                    <img src="../resourses/3.jpg" alt="" class="fix">
+                                </div>
+                                <div class="image">
+                                    <img src="../resourses/4.jpg" alt="" class="fix">
+                                </div>
+                                <div class="image">
+                                    <img src="../resourses/5.jpg" alt="" class="fix">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="buttons">
+                            <a class="slider-prev">
+                                Предыдущая
+                            </a>
+                            <a class="slider-next">
+                                Следующая
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section1">
+            <div class="container">
+                <div class="section_title">
+                    <h1>Список задач</h1>
+                </div>
+                <div class="section_main">
+                    <form id="task" action="">
+                        <div class="list_header">
+                            <input type="text" id="inputText" placeholder="Задача...">
+                            <span onclick="newElement()" class="addButton">Добавить</span>
+                        </div>
+                        <ul class="list">
+                        </ul>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <section class="section3">
+            <div class="container">
+                <div class="section_title">
+                    <h1>Таймер</h1>
+                </div>
+                <div class="section_main">
+                    <div class="timer">
+                        <div class="time_buttons"></div>
+                        <div class="time">
+                            <b class="time_display_min">00</b>
+                            <p class="time_display_sep">:</p>
+                            <b class="time_display_sec">00</b>
+                        </div>
+                        <div class="time_action_buttons">
+                            <button class="time_action_button">Старт</button>
+                            <button class="time_action_button">Стоп</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 </body>
 </html>
